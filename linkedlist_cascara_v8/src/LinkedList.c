@@ -34,7 +34,21 @@ LinkedList* ll_newLinkedList(void)
  */
 int ll_len(LinkedList* this)
 {
-    int returnAux = -1;
+    int returnAux = 0;
+    Node* auxNodo;
+
+    if(this->pFirstNode != NULL)
+    {
+        if((auxNodo + returnAux)->pElement != NULL)
+        {
+            returnAux++;
+        }
+    }
+    else
+    {
+        returnAux = -1;
+    }
+
     return returnAux;
 }
 
